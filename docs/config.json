@@ -1,0 +1,13 @@
+{
+  "layers": [
+    { "label": "L4", "position": 0.2 },
+    { "label": "L3", "position": 0.45 },
+    { "label": "L2", "position": 0.7 },
+    { "label": "L1", "position": 0.9 }
+  ],
+  "blocks": [
+    { "type": "ERP", "description": "Enterprise", "vendors": ["SAP", "Microsoft Dynamics", "Oracle NetSuite", "Epicor", "SYSPRO"] },
+    { "type": "QMS/DMS", "description": "Quality/Docs", "vendors": ["Veeva Vault", "Dot Compliance", "Qualio", "MasterControl", "Medidata"] },
+    …
+  ]
+}
