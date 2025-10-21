@@ -1,33 +1,23 @@
- (cd "$(git rev-parse --show-toplevel)" && git apply --3way <<'EOF' 
-diff --git a/docs/config.json b/docs/config.json
-new file mode 100644
-index 0000000000000000000000000000000000000000..3cc315d6493b66f69be06e708ef921d2e425bfd8
---- /dev/null
-+++ b/docs/config.json
-@@ -0,0 +1,23 @@
-+{
-+  "layers": [
-+    { "label": "L4", "position": 0.2 },
-+    { "label": "L3", "position": 0.45 },
-+    { "label": "L2", "position": 0.7 },
-+    { "label": "L1", "position": 0.9 }
-+  ],
-+  "blocks": [
-+    { "type": "ERP", "description": "Enterprise", "vendors": ["SAP", "Microsoft Dynamics", "Oracle NetSuite", "Epicor", "SYSPRO"] },
-+    { "type": "QMS/DMS", "description": "Quality/Docs", "vendors": ["Veeva Vault", "Dot Compliance", "Qualio", "MasterControl", "Medidata"] },
-+    { "type": "LMS", "description": "Training", "vendors": ["talentlms", "eloomi", "nimble LMS", "trainingpost", "Levelup"] },
-+    { "type": "LIMS", "description": "Lab", "vendors": ["STARLIMS", "Labware LIMS", "LabVantage", "Thermo Fisher LIMS", "GenoFAB"] },
-+    { "type": "MES", "description": "Operations", "vendors": ["PAS-X", "Syncade", "PharmaSuite"] },
-+    { "type": "LAB ELN", "description": "Notebook", "vendors": ["Labguru", "Labfolder", "eLabJournal", "SciCord", "LabArchives"] },
-+    { "type": "HISTORIAN", "description": "Time-series", "vendors": ["AVEVA PI System", "FactoryTalk Historian", "Canary"] },
-+    { "type": "CMMS", "description": "Maintenance", "vendors": [] },
-+    { "type": "BMS", "description": "Building", "vendors": [] },
-+    { "type": "PLC", "description": "Control", "vendors": ["Siemens", "Rockwell", "Yokogawa"] },
-+    { "type": "Standalone Equipment", "description": "", "vendors": [] },
-+    { "type": "Standalone Lab Instruments", "description": "", "vendors": [] },
-+    { "type": "Digital System", "description": "", "vendors": [] }
-+  ]
-+}
- 
-EOF
-)
+{
+  "layers": [
+    { "label": "L4", "position": 0.2 },
+    { "label": "L3", "position": 0.45 },
+    { "label": "L2", "position": 0.7 },
+    { "label": "L1", "position": 0.9 }
+  ],
+  "blocks": [
+    { "type": "ERP", "description": "Enterprise", "vendors": ["SAP", "Microsoft Dynamics", "Oracle NetSuite", "Epicor", "SYSPRO"] },
+    { "type": "QMS/DMS", "description": "Quality/Docs", "vendors": ["Veeva Vault", "Dot Compliance", "Qualio", "MasterControl", "Medidata"] },
+    { "type": "LMS", "description": "Training", "vendors": ["talentlms", "eloomi", "nimble LMS", "trainingpost", "Levelup"] },
+    { "type": "LIMS", "description": "Lab", "vendors": ["STARLIMS", "Labware LIMS", "LabVantage", "Thermo Fisher LIMS", "GenoFAB"] },
+    { "type": "MES", "description": "Operations", "vendors": ["PAS-X", "Syncade", "PharmaSuite"] },
+    { "type": "LAB ELN", "description": "Notebook", "vendors": ["Labguru", "Labfolder", "eLabJournal", "SciCord", "LabArchives"] },
+    { "type": "HISTORIAN", "description": "Time-series", "vendors": ["AVEVA PI System", "FactoryTalk Historian", "Canary"] },
+    { "type": "CMMS", "description": "Maintenance", "vendors": [] },
+    { "type": "BMS", "description": "Building", "vendors": [] },
+    { "type": "PLC", "description": "Control", "vendors": ["Siemens", "Rockwell", "Yokogawa"] },
+    { "type": "Standalone Equipment", "description": "", "vendors": [] },
+    { "type": "Standalone Lab Instruments", "description": "", "vendors": [] },
+    { "type": "Digital System", "description": "", "vendors": [] }
+  ]
+}
